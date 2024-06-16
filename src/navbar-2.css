@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih transparan */
+    backdrop-filter: blur(10px); /* Blur background transparan */
+}
+
+#dropdownNavbar {
+    background-color: rgba(255, 255, 255, 0.908); /* Warna latar belakang putih transparan */
+    backdrop-filter: blur(10px); /* Blur background transparan */
+  }
+  
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih transparan */
+    backdrop-filter: blur(10px); /* Blur background transparan */
+    color: black; /* Warna teks hitam ketika digulung */
+}
+
+.navbar a {
+    color: black; /* Warna teks default */
+    transition: color 0.8s; /* Transisi warna teks */
+}
+
+.navbar.scrolled a {
+    color: black; /* Warna teks saat digulung */
+}
+
+/* Gaya tambahan untuk tautan saat dihover */
+.navbar a:hover {
+    color: #00BFFF; /* Ubah warna saat tautan dihover */
+}
+

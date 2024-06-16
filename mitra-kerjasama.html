@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitra Kerjasama</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <script src="./node_modules/preline/dist/preline.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <link href="src/navbar-2.css" rel="stylesheet">
+
+      <!-- Navbar -->
+      <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+        <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-between w-full sm:w-auto">
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              </button>
+            </div>
+          </div>
+           <!-- Dropdown menu -->
+           <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+              </li>
+            </ul>
+          </div>
+                          
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/index.html">Beranda</a>
+              <a data-dropdown-toggle="dropdownNavbar" class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+                Blog
+                <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/mitra-kerjasama.html">Mitra Kerjasama</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="#">Project Magang</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="#">Profil Instansi</a>
+            </div>
+          </div>          
+        </nav>
+      </div>
+    <!-- End Navbar -->
+
+    <script>
+      window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('.navbar');
+          if (window.scrollY > 0) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+    </script>
+
+</head>
+<body>
+
+  <body>
+    <!-- Blog Article -->
+  
+    <div class="max-w-3xl px-4 pt-24 lg:pt-28 md:pt-28 sm:pt-28 sm:px-6 lg:px-8 mx-auto">
+      <div class="max-w-2xl">
+    
+        <!-- Content -->
+        <div class="space-y-5 md:space-y-8">
+          <div class="space-y-3">
+            <h2 class="text-2xl font-bold md:text-3xl dark:text-white">Mitra Kerjasama Magang Undiksha Dengan BPS Kabupaten Buleleng</h2>
+            <p class="text-lg text-gray-800 dark:text-neutral-200">At preline, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.</p>
+          </div>
+    
+          <p class="text-lg text-gray-800 dark:text-neutral-200">We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+    
+          <figure>
+            <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+              A woman sitting at a table.
+            </figcaption>
+          </figure>
+    
+          <p class="text-lg text-gray-800 dark:text-neutral-200">As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.</p>
+    
+          <p class="text-lg text-gray-800 dark:text-neutral-200">That's why we are excited to share that we now have a <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">free version of Preline</a>, which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.</p>
+    
+          <blockquote class="text-center p-4 sm:px-7">
+            <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+              To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.
+            </p>
+            <p class="mt-5 text-gray-800 dark:text-neutral-200">
+              Nicole Grazioso
+            </p>
+          </blockquote>
+    
+          <figure>
+            <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1670272498380-eb330b61f3cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+              A man and a woman looking at a cell phone.
+            </figcaption>
+          </figure>
+    
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Bringing the culture of sharing to everyone</h3>
+    
+            <p class="text-lg text-gray-800 dark:text-neutral-200">We know the power of sharing is real, and we want to create an opportunity for everyone to try Preline and explore how transformative open communication can be. Now you can have a team of one or two designers and unlimited spectators (think PMs, management, marketing, etc.) share work and explore the design process earlier.</p>
+          </div>
+    
+          <ul class="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800 dark:text-neutral-200">
+            <li class="ps-2">Preline allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on," <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">said</a> Stewart Scott-Curran, Intercom's Director of Brand Design.</li>
+            <li class="ps-2">Preline opened a new way of sharing. It's a persistent way for everyone to see and absorb each other's work," said David Scott, Creative Director at <a class="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">Eventbrite</a>.</li>
+          </ul>
+    
+          <p class="text-lg text-gray-800 dark:text-neutral-200">Small teams and individual designers need a space where they can watch the design process unfold, both for themselves and for the people they work with – no matter if it's a fellow designer, product manager, developer or client. Preline allows you to invite more people into the process, creating a central place for conversation around design. As those teams grow, transparency and collaboration becomes integrated in how they communicate and work together.</p>
+    
+          <div>
+            <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200" href="#">
+              Plan
+            </a>
+            <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200" href="#">
+              Web development
+            </a>
+            <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200" href="#">
+              Free
+            </a>
+            <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200" href="#">
+              Team
+            </a>
+          </div>
+        </div>
+        <!-- End Content -->
+      </div>
+    </div>
+    <!-- End Blog Article -->
+      
+  </body>
+  
+    
+</body>
+</html>

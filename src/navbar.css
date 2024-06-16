@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.8s, backdrop-filter 0.3s, color 0.6s;
+    background-color: transparent; /* Ubah transparan agar tidak mengganggu penggulungan */
+    backdrop-filter: blur(0px); /* Nolkan blur untuk transparan */
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang putih transparan */
+    backdrop-filter: blur(10px); /* Blur background transparan */
+    color: black; /* Warna teks hitam ketika digulung */
+}
+
+.navbar a {
+    color: white; /* Warna teks default */
+    transition: color 0.8s; /* Transisi warna teks */
+}
+
+.navbar.scrolled a {
+    color: black; /* Warna teks saat digulung */
+}
+
+/* Gaya tambahan untuk tautan saat dihover */
+.navbar a:hover {
+    color: #00BFFF; /* Ubah warna saat tautan dihover */
+}
+
+/* Tombol hamburger default (putih) */
+#hamburgerButton {
+    border-color: white;
+}
+
+#hamburgerIcon,
+#closeIcon {
+    stroke: white;
+}
+
+/* Tombol hamburger saat di-scroll (hitam) */
+.navbar.scrolled #hamburgerButton {
+    border-color: black;
+}
+
+.navbar.scrolled #hamburgerIcon,
+.navbar.scrolled #closeIcon {
+    stroke: black;
+}
