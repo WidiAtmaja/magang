@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Magang</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="src/navbar-2.css" rel="stylesheet">
+
+      <!-- Navbar -->
+      <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+        <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-between w-full sm:w-auto">
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              </button>
+            </div>
+          </div>
+           <!-- Dropdown menu -->
+           <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+              </li>
+            </ul>
+          </div>
+                          
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/index.html">Beranda</a>
+              <a data-dropdown-toggle="dropdownNavbar" class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+                Blog
+                <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/proyek.html">Proyek Magang</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/profil-instansi.html">Profil Instansi</a>
+            </div>
+          </div>          
+        </nav>
+      </div>
+    <!-- End Navbar -->
+    <script>
+      window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('.navbar');
+          if (window.scrollY > 0) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+ <!-- Hero -->
+<div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 mt-8 lg:mt-0">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-6 lg:pb-10">
+    <!-- Title and Description -->
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl md:pt-5 sm:pt-6 pt-5 lg:text-5xl dark:text-neutral-200">
+        <span class="block md:inline">Tentang Proyek</span>
+        <span class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-500 to-blue-600 text-transparent">Magang Monalisa</span>
+      </h1>
+    </div>
+    <!-- End Title and Description -->
+  </div>
+</div>
+<!-- End Hero -->
+
+
+  <!-- Blog Article -->
+  <div class="flex-grow max-w-4xl px-4 py-8 lg:py-12 lg:px-8 mx-auto">
+    <div class="max-w-3xl">
+      <!-- Content -->
+      <div class="space-y-5 md:space-y-8">
+        <!-- Image with Caption -->
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/ssmonalisa.png" alt="fotobersama">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Tampilan website monalisa
+          </figcaption>
+        </figure>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Badan Pusat Statistik Kabupaten Buleleng menghadapi tantangan dalam mengawasi dan menilai kualitas data statistik yang terkumpul dari kegiatan lapangan. Saat ini, pengawasan oleh pimpinan serta pelaporan kemajuan kerja masih dilakukan secara manual dan konvensional. Hal ini menyebabkan kesulitan dalam pengawasan yang rinci dan kurangnya keteraturan dalam menyelesaikan kemajuan kerja lapangan. Permasalahan ini dapat diatasi dengan memberikan solusi yang memungkinkan pengawasan dan pemantauan kualitas data statistik secara daring. 
+        </p>
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Dalam mengatasi permasalahan terkait pemantauan dan kualitas statistik di Badan Pusat Statistik Kabupaten Buleleng, telah diajukan solusi pengembangan proyek back-end sistem informasi yang dinamakan MONALISA pada fungsi IPDS, Produksi dan Neraca. Pada sistem ini memiliki fitur utama yaitu fitur Teknis dan Fitur Administrasi. Fitur teknis merupakan fitur yang digunakan untuk memanajemen kegiatan setiap fungsi berdasarkan periode tahunan, triwulan, dan bulanan. Kemudian, fitur administrasi merupakan fitur yang digunakan untuk memanajemen berkas-berkas administrasi untuk setiap fungsi berdasarkan setiap kegiatan tahunan.
+        </p>
+
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/sscode.jpeg" alt="fotocode">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Tampilan source code back-end Monalisa
+          </figcaption>
+        </figure>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Sistem informasi Monalisa dapat memberikan pimpinan dalam mengawasi setiap perkembangan semua tugas yang terkait dengan masing-masing fungsi tersebut. Penginputan tugas akan dilakukan oleh ketua fungsi (organik), sementara pengisian kemajuan tugas akan dilakukan oleh mitra-mitra BPS (anorganik). Dengan adanya sistem informasi MONALISA, diharapkan Badan Pusat Statistik Kabupaten Buleleng dapat meningkatkan efisiensi dalam pemantauan, serta meningkatkan kualitas data statistik yang dihasilkan.
+        </p>
+
+        <!-- Goals of Collaboration -->
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Fitur Administrasi Monalisa</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Fitur administrasi Monalisa adalah fitur yang digunakan untuk tujuan repository file administrasi khususnya administrasi keuangan. Dalam fitur ini juga terdapat setiap presentase progres dan jumlah file untuk memanajemen sebagaimana progres administrasi itu dijalankan dari setiap kegiatan pada fungsi BPS Buleleng. Semua kegiatan setiap fungsi dihitung pada periode tahunan, sehingga akan ada arsip tahunan untuk memudahkan manajemen arsip administrasi.
+        </p>
+
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="#" alt="fotobersama">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Tampilan Fitur Administrasi
+          </figcaption>
+        </figure>
+
+        <!-- Goals of Collaboration -->
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Fitur Teknis Monalisa</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Fitur teknis adalah wadah untuk seluruh kegiatan yang dilaksanakan oleh Organik. Setiap kegiatan teknis dapat dikelompokkan berdasarkan periode aktivitas yang telah ditambahkan oleh setiap ketua fungsi (organik). Setiap kegiatan teknis terdapat dua tahapan pada masing-masing fungsi yaitu pemutakhiran dan pencacahan. Masing-masing kegiatan teknis dikategorikan dalam tiga kegiatan yang meliputi Perusahaan, Rumah-Tangga, dan Ubinan. Dan khusus untuk penambahan setiap kegiatan yang bersifat Direct Link akan menuju ke halaman teknis resmi miliki BPS Pusat.
+        </p>
+
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="#" alt="fotobersama">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Tampilan Teknis Administrasi
+          </figcaption>
+        </figure>
+
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Bagaimana Peran Back-End Pada Monalisa?</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Dalam pengembangan Monalisa, terdapat lima anggota tim yang terdiri dari dua Front-End, dua Back-End, dan satu UI/UX. Penulis memiliki role untuk mengembangkan Back-End pada bagian tiga fungsi (IPDS, Produksi, dan Neraca) dan melibatkan fitur penting yaitu fitur teknis dan administrasi. Berikut adalah peran back-end dalam proyek ini:
+        </p>
+
+        <!-- List of Goals -->
+        <ul class="list-disc list-outside space-y-2 ps-2 text-lg text-gray-800 dark:text-neutral-200">
+          <li class="ps-1">Perancangan Basis Data: Merancang struktur basis data yang efisien untuk menyimpan informasi terkait kegiatan teknis dan administrasi, serta pengguna (admin, organik, dan anorganik). Basis data harus mampu menangani berbagai jenis data, termasuk dokumen, transaksi, dan aktivitas.</li>
+          <li class="ps-1">CRUD Kegiatan Teknis: Menyediakan fungsi untuk Create, Read, Update, Delete (CRUD) kegiatan teknis oleh ketiga fungsi (IPDS, Produksi, Neraca). Setiap kegiatan teknis harus dapat dikategorikan berdasarkan periode (tahunan, semesteran, triwulan, bulanan).</li>
+          <li class="ps-1">CRUD Dokumen Administrasi: Menyediakan fungsi untuk CRUD dokumen administrasi oleh setiap fungsi.</li>
+          <li class="ps-1">Pembuatan Role User: Pembuatan role atau otorisasi pengguna yang memiliki hak untuk mengaskses bagian sistem tertentu, monalisa memiliki tiga role yaitu Admin, Organik(internal), Anorganik (eksternal atau mitra).</li>
+          <li class="ps-1">Keamanan Data: Implementasi middleware dan kontrol akses yang ketat untuk memastikan keamanan data dan otoritas pengguna.</li>
+        </ul>
+
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Teknologi Apa Yang Digunakan Monalisa?</h3>
+        </div>
+
+        <!-- List of Goals -->
+        <ul class="list-disc list-outside space-y-2 ps-2 text-lg text-gray-800 dark:text-neutral-200">
+          <li class="ps-1">
+            Back-End : Menggunakan framework atau kerangka kerja Laravel versi 10, framework ini dipilih karena berjalan sangat stabil dan memiliki dokumentasi dan library yang sudah lengkap sehingga dapat mengefisienkan waktu pengembangan.
+          </li>
+          <li class="ps-1">
+            Front-End : Menggunakan Tailwind CSS untuk mempercepat pengembangan tampilan antarmuka pengguna dengan menggunakan utilitas yang sudah ada.
+          </li>
+          <li class="ps-1">
+            JQuery Ajax() : Digunakan untuk menerima dan mengirimkan respon secara asinkronus agar setiap perubahan permintaan data dapat dilakukan secara realtime.
+          </li>
+          <li class="ps-1">
+            Laravel Breeze: Digunakan untuk pembuatan autentikasi pengguna untuk keamanan sistem agar tidak bisa diakses oleh sembarangan pengguna.
+          </li>
+          <li class="ps-1">
+            MySQL : Basis data yang digunakan pada sistem monalisa ini.
+          </li>
+          <li class="ps-1">
+            GIT: Untuk manajemen proyek repository monalisa.
+          </li>
+          <li class="ps-1">
+            Vite : Untuk mempercepat pengembangan dari sisi Front-End
+          </li>
+        </ul>
+
+      </div>
+      <!-- End Content -->
+    </div>
+    <hr class="border-gray-400 border-1 mt-11">
+  </div>
+  <!-- End Blog Article -->
+
+  <!-- Footer -->
+  <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto text-center">
+    <!-- Grid -->
+    <div>
+      <a class="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">Proyek Magang</a>
+    </div>
+    <!-- End Col -->
+    <div class="mt-3">
+      <p class="text-gray-500 dark:text-neutral-500">Blog Magang BPS Kabupaten Buleleng</p>
+      <p class="text-gray-500 dark:text-neutral-500">I Gede Bagastia Widi Atmaja</p>
+    </div>
+
+    <!-- Social Brands -->
+    <div class="mt-3 mb-3 space-x-2 flex justify-center">
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://bulelengkab.bps.go.id/">
+        <img src="dist/img/logobps.png" alt="logobps">
+      </a>
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://undiksha.ac.id/">
+        <img src="dist/img/logoundiksha.png" alt="logoundiksha">
+      </a>
+    </div>
+    <!-- End Social Brands -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript Imports -->
+  <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+</body>
+
+</html>

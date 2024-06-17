@@ -6,9 +6,6 @@
     <title>Blog Magang</title>
     <link href="dist/output.css" rel="stylesheet">
     <link href="src/navbar.css" rel="stylesheet">
-
-    <script src="/src/navbar.js"></script>
-    <script src="/src/humberger.js"></script>
 </head>
 <body>
 
@@ -35,8 +32,8 @@
         <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/index.html">Beranda</a>
         <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="#">Blog</a>
         <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="#">Project Magang</a>
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="#">Profil Instansi</a>
+        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/proyek-magang.html">Proyek Magang</a>
+        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/profil-instansi.html">Profil Instansi</a>
       </div>
     </div>
   </nav>
@@ -128,6 +125,18 @@
       <!-- End Grid -->
     </div>
     <!-- End Card Blog -->
+
+    <script>
+      window.addEventListener("scroll", function () {
+      var navbar = document.querySelector(".navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+    </script>
 
    <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>

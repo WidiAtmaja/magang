@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Instansi</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="src/navbar-2.css" rel="stylesheet">
+
+      <!-- Navbar -->
+      <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+        <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-between w-full sm:w-auto">
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+              </button>
+            </div>
+          </div>
+           <!-- Dropdown menu -->
+           <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+              </li>
+            </ul>
+          </div>
+                          
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/index.html">Beranda</a>
+              <a data-dropdown-toggle="dropdownNavbar" class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+                Blog
+                <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                  <path d="M1 1l4 4 4-4" />
+                </svg>
+              </a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/proyek-magang.html">Proyek Magang</a>
+              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/profil-instansi.html">Profil Instansi</a>
+            </div>
+          </div>          
+        </nav>
+      </div>
+    <!-- End Navbar -->
+    <script>
+      window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('.navbar');
+          if (window.scrollY > 0) {
+              navbar.classList.add('scrolled');
+          } else {
+              navbar.classList.remove('scrolled');
+          }
+      });
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+ <!-- Hero -->
+<div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 mt-8 lg:mt-0">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-6 lg:pb-10">
+    <!-- Title and Description -->
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl md:pt-5 sm:pt-6 pt-5 lg:text-5xl dark:text-neutral-200">
+        <span class="block md:inline">Profil Instansi</span>
+        <span class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-500 to-blue-600 text-transparent">BPS Buleleng</span>
+      </h1>
+    </div>
+    <!-- End Title and Description -->
+  </div>
+</div>
+<!-- End Hero -->
+
+
+  <!-- Blog Article -->
+  <div class="flex-grow max-w-4xl px-4 py-8 lg:py-12 lg:px-8 mx-auto">
+    <div class="max-w-3xl">
+      <!-- Content -->
+      <div class="space-y-5 md:space-y-8">
+        <!-- Image with Caption -->
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/gedungbps.jpg" alt="foto gedung">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Gedung Badan Pusat Statistik Kabupaten Buleleng
+          </figcaption>
+        </figure>
+
+        <!-- Goals of Collaboration -->
+        <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Tentang Instansi</h3>
+        </div> 
+
+          <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Badan Pusat Statistik adalah Lembaga Pemerintah Non Kementerian yang bertanggung jawab langsung kepada Presiden. Jenis statistik berdasarkan tujuan pemanfaatannya terdiri atas statistik dasar yang sepenuhnya diselenggarakan oleh BPS, statistik sektoral yang dilaksanakan oleh instansi Pemerintah secara mandiri atau bersama dengan BPS, serta statistik khusus yang diselenggarakan oleh lembaga, organisasi, perorangan, dan atau unsur masyarakat lainnya secara mandiri atau bersama dengan BPS. Badan Pusat Statistik melaksanakan tugas pemerintahan dibidang statistik sesuai peraturan perundang-undangan. 
+          </p>
+
+          <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Badan Pusat Statistik memiliki fungsi dalam pengkajian, penyusunan dan perumusan kebijakan di bidang statistik, pengkoordinasian kegiatan statistik nasional dan regional, penetapan dan penyelenggaraan statistik dasar, penetapan sistem statistik nasional,melakukan pembinaan dan fasilitasi terhadap kegiatan instansi pemerintah dibidang kegiatan statistik, dan dalam penyelenggaraan pembinaan dan pelayanan administrasi umum di bidang perencanaan umum, ketatausahaan, organisasi dan tatalaksana, kepegawaian, keuangan, kearsipan, kehumasan, hukum, perlengkapan dan rumah tangga.
+          </p>
+
+          <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Badan Pusat Statistik juga memiliki peranan yang harus dijalankan berdasarkan undang-undang yang telah ditetapkan, sebagai berikut:
+          </p>
+
+          <ul class="list-disc list-outside space-y-2 ps-2 text-lg text-gray-800 dark:text-neutral-200">
+            <li class="ps-1">
+            Menyediakan kebutuhan data bagi pemerintah dan masyarakat. Data ini didapatkan dari sensus atau survey yang dilakukan sendiri dan juga dari departemen atau lembaga pemerintahan lainnya sebagai data sekunder.
+            </li>
+            <li class="ps-1">
+            Membantu kegiatan statistik di kementerian, lembaga pemerintah atau institusi lainnya, dalam membangun sistem perstatistikan nasional.
+            </li>
+            <li class="ps-1">
+            Mengembangkan dan mempromosikan standar teknik dan metodologi statistik, dan menyediakan pelayanan pada bidang pendidikan dan pelatihan statistik.
+            </li>
+            <li class="ps-1">
+            Membangun kerjasama dengan institusi internasional dan negara lain untuk kepentingan perkembangan statistik Indonesia.
+            </li>
+          </ul>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Visi Badan Pusat Statistik</h3>
+          </div>
+  
+          <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Dengan mempertimbangkan capaian kinerja, memperhatikan aspirasi masyarakat, potensi dan permasalahan, serta mewujudkan Visi Presiden dan Wakil Presiden maka visi Badan Pusat Statistik untuk tahun 2020-2024 adalah:
+          </p>
+
+          <blockquote class="text-center p-4 sm:px-7">
+            <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+                “Penyedia Data statistik Berkualitas untuk Indonesia Maju”
+            (“Provider of Qualified Statistical Data for Advanced Indonesia”)
+            </p>
+          </blockquote>
+
+          <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Dalam visi yang baru tersebut berarti bahwa BPS berperan dalam penyediaan data statistik nasional maupun internasional, untuk menghasilkan statistik yang mempunyai kebenaran akurat dan menggambarkan keadaan yang sebenarnya, dalam rangka mendukung Indonesia Maju.
+          </p>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Misi Badan Pusat Statistik</h3>
+          </div>
+
+          <ul class="list-disc list-outside space-y-2 ps-2 text-lg text-gray-800 dark:text-neutral-200">
+            <li class="ps-1">
+            Menyediakan statistik berkualitas yang berstandar nasional dan internasional.
+            </li>
+            <li class="ps-1">
+            Membina Kementerian/Lembaga/Perangkat Kerja Daerah/Instansi melalui Sistem Statistik Nasional yang berkesinambungan.
+            </li>
+            <li class="ps-1">
+            Mewujudkan pelayanan prima di bidang statistik untuk terwujudnya Sistem Statistik Nasional.
+            </li>
+            <li class="ps-1">
+            Membangun SDM yang unggul dan adaptif berlandaskan nilai profesionalisme, integritas dan amanah.
+            </li>
+          </ul>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Struktur Organisasi</h3>
+          </div>
+
+          <figure>
+            <img class="custom-size object-cover rounded-xl border border-gray-300" src="dist/img/struktur-organisasi.png" alt="foto gedung">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                Struktur Organisasi
+            </figcaption>
+        </figure>
+
+        <style>
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Menempatkan elemen di tengah secara horizontal */
+            margin: 20px;
+        }
+         </style>
+
+         <p class="text-lg text-gray-800 dark:text-neutral-200">
+            Berdasarkan peraturan Kepala Badan Pusat Statistik Nomor 8 Tahun 2020 tentang Organisasi dan Tata Kerja Badan Pusat Statistik Kabupaten. Susunan organisasi BPS terdiri dari:
+        </p>
+
+         <ul class="list-disc list-outside space-y-2 ps-2 text-lg text-gray-800 dark:text-neutral-200">
+            <li class="ps-1">
+            Kepala: Kepala BPS mempunyai tugas dalam memimpin BPS Kabupaten sesuai dengan tugas dan fungsi BPS Kabupaten serta membina aparatur BPS Kabupaten agar berdaya guna dan berhasil guna. 
+            </li>
+            <li class="ps-1">
+            Sub bagian Umum: Sub bagian Umum memiliki tugas dalam melakukan penyusunan perencanaan, keuangan, sumber daya manusia, hubungan masyarakat, hukum dan organisasi, kearsipan, persandian, barang milik negara, perlengkapan dan rumah tangga.
+            </li>
+            <li class="ps-1">
+            Kelompok Jabatan Fungsional: Kelompok Jabatan Fungsional mempunyai tugas dalam memberikan pelayanan fungsional dalam pelaksanaan tugas dan fungsi BPS Kabupaten sesuai dengan bidang keahlian dan keterampilan.
+            </li>
+          </ul>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Logo & Papan Nama Instansi</h3>
+          </div>
+
+        <figure>
+            <img class="custom-size object-cover rounded-xl border border-gray-300" src="dist/img/logobpshd.png" alt="logobps">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+               Logo Badan Pusat Statistik
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img class="custom-size object-cover rounded-xl border border-gray-300" src="dist/img/papannama.png" alt="papannama">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+               Papan Nama Badan Pusat Statistik Kabupaten Buleleng
+            </figcaption>
+        </figure>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Koordinat Instansi</h3>
+          </div>
+
+          <blockquote class="text-center p-4 sm:px-7">
+            <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+                -8.115260756799719, 115.0867598846566
+            </p>
+          </blockquote>
+
+          <figure>
+            <img class="custom-size object-cover rounded-xl border border-gray-300" src="dist/img/petabps.png" alt="foto gedung">
+            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                Peta BPS Buleleng
+            </figcaption>
+        </figure>
+
+          <div class="space-y-3">
+            <h3 class="text-2xl font-semibold dark:text-white">Alamat Instansi</h3>
+          </div>
+
+          <blockquote class="text-center p-4 sm:px-7">
+            <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+                Jl. Dewi Sartika Selatan No.19, Kaliuntu, Kec. Buleleng, Kabupaten Buleleng, Bali 81116.
+            </p>
+          </blockquote>
+      </div>
+      <!-- End Content -->
+    </div>
+    <hr class="border-gray-400 border-1 mt-11">
+  </div>
+  <!-- End Blog Article -->
+
+  <!-- Footer -->
+  <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto text-center">
+    <!-- Grid -->
+    <div>
+      <a class="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">Profil Instansi</a>
+    </div>
+    <!-- End Col -->
+    <div class="mt-3">
+      <p class="text-gray-500 dark:text-neutral-500">Blog Magang BPS Kabupaten Buleleng</p>
+      <p class="text-gray-500 dark:text-neutral-500">I Gede Bagastia Widi Atmaja</p>
+    </div>
+
+    <!-- Social Brands -->
+    <div class="mt-3 mb-3 space-x-2 flex justify-center">
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://bulelengkab.bps.go.id/">
+        <img src="dist/img/logobps.png" alt="logobps">
+      </a>
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://undiksha.ac.id/">
+        <img src="dist/img/logoundiksha.png" alt="logoundiksha">
+      </a>
+    </div>
+    <!-- End Social Brands -->
+  </footer>
+  <!-- End Footer -->
+
+  <!-- JavaScript Imports -->
+  <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+</body>
+
+</html>
