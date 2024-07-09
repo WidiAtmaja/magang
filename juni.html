@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juni</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="src/navbar-2.css" rel="stylesheet">
+
+    <!-- Navbar -->
+    <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+        <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+            aria-label="Global">
+            <div class="flex items-center justify-between w-full sm:w-auto">
+                <div class="sm:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-collapse="#navbar-collapse-with-animation"
+                        aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg"
+                            width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9"
+                            xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar"
+                class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+                <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                        <a href="/magang/februari.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+                    </li>
+                    <li>
+                        <a href="/magang/maret.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+                    </li>
+                    <li>
+                        <a href="/magang/april.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+                    </li>
+                    <li>
+                        <a href="/magang/mei.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+                    </li>
+                    <li>
+                        <a href="/magang/juni.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+                    </li>
+                    <li>
+                        <a href="/magang/juli.html"
+                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="navbar-collapse-with-animation"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+                    <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+                        href="/magang/index.html">Beranda</a>
+                    <a data-dropdown-toggle="dropdownNavbar"
+                        class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+                        Blog
+                        <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <path d="M1 1l4 4 4-4" />
+                        </svg>
+                    </a>
+                    <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+                        href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
+                    <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+                        href="/magang/proyek-magang.html">Proyek Magang</a>
+                    <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+                        href="/magang/profil-instansi.html">Profil Instansi</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <!-- Hero -->
+    <div
+        class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 mt-8 lg:mt-0">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-6 lg:pb-10">
+            <!-- Title and Description -->
+            <div class="max-w-4xl mx-auto text-center">
+                <h1
+                    class="block font-bold text-gray-800 text-5xl md:text-6xl md:pt-5 sm:pt-6 pt-5 lg:text-6xl dark:text-neutral-200">
+                    <span class="block md:inline">Bulan</span>
+                    <span
+                        class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-500 to-blue-600 text-transparent">Juni</span>
+                </h1>
+            </div>
+            <!-- End Title and Description -->
+        </div>
+    </div>
+    <!-- End Hero -->
+
+
+    <!-- Blog Article -->
+    <div class="flex-grow max-w-4xl px-4 py-8 lg:py-12 lg:px-8 mx-auto">
+        <div class="max-w-3xl">
+            <!-- Content -->
+            <div class="space-y-5 md:space-y-8">
+                <blockquote class="text-center p-4 sm:px-7">
+                    <p
+                        class="text-xl italic font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+                        “Keberhasilan sebuah tim adalah hasil dari kerjasama yang solid dan komunikasi yang efektif”
+                    </p>
+                </blockquote>
+
+                <!-- Goals of Collaboration -->
+
+
+                <!-- Image with Caption -->
+                <figure>
+                    <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotobersama.jpeg"
+                        alt="foto">
+                    <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                        Penyerahan Piagam Dan Plakat Kepda Mitra Bps Buleleng Beserta Mentor
+                    </figcaption>
+                </figure>
+
+                <div class="space-y-3">
+                    <h3 class="text-2xl font-semibold dark:text-white">Penyerahan Piagam Dan Plakat Kepda Mitra Bps
+                        Buleleng Beserta Mentor</h3>
+                </div>
+
+                <p class="text-lg text-gray-800 dark:text-neutral-200">
+                    Penyerahan Piagam Dan Plakat Kepda Mitra Bps Buleleng Beserta Mentor
+                    Jumat, tanggal 7 Juni 2024 terdapat kegiatan kunjungan terakhir Dosen Pembimbing ke tempat magang.
+                    Kunjungan ini dilakukan untuk tujuan penyerahan plakat dan piagam kepada mitra BPS Kabupaten
+                    Buleleng sekaligus juga untuk Mentor Tim Magang Undiksha. Penyerahan ini sebagai bentuk apresiasi
+                    antara tim magang undiksha dengan mitra BPS Kabupaten Buleleng. Setelah kunjungan saya lanjut untuk
+                    memperbaiki fitur teknis pada pencacahan data.
+                </p>
+
+
+                <figure>
+                    <img class="w-full object-cover rounded-xl border border-gray-300"
+                        src="dist/img/harilahirpancasila.jpg" alt="foto">
+                    <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                        Upacara Hari Lahir Pancasila
+                    </figcaption>
+                </figure>
+
+                <div class="space-y-3">
+                    <h3 class="text-2xl font-semibold dark:text-white">Upacara Hari Lahir Pancasila</h3>
+                </div>
+
+                <p class="text-lg text-gray-800 dark:text-neutral-200">
+                    Pada tanggal 1 Juni, penulis ikut serta dalam kegiatan upacara dalam rangka memperingati hari lahir
+                    pancasila. Acara ini dihadiri oleh para pegawai Badan Pusat Statistik (BPS) dan dipimpin oleh Kepala
+                    BPS Buleleng. Upacara berlangsung dengan tertib dan baik, menunjukkan rasa cinta dan penghormatan
+                    kami terhadap nilai-nilai Pancasila yang menjadi dasar negara Indonesia.
+                </p>
+
+                <figure>
+                    <img class="w-full object-cover rounded-xl border border-gray-300"
+                        src="/dist/img/fotopresentasiakhir.jpg" alt="foto">
+                    <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                        Presentasi Akhir Proyek Monalisa
+                    </figcaption>
+                </figure>
+
+                <div class="space-y-3">
+                    <h3 class="text-2xl font-semibold dark:text-white">Presentasi Akhir Proyek Monalisa</h3>
+                </div>
+
+                <p class="text-lg text-gray-800 dark:text-neutral-200">
+                    Di akhir bulan Juni ini, tim penulis mendapatkan kesempatan untuk mempresentasikan hasil proyek
+                    Monalisa kepada semua pegawai yang ada di Instansi BPS Kabupaten Buleleng. Presentasi ini bertujuan
+                    untuk mengenalkan dan mengajarkan penggunaan monalisa ke pada seluruh pegawai disini. Tim magang
+                    undiksha mendapatkan apresiasi terhadap proyek ini, yang dimana proyek ini disampaikan dari pimpinan
+                    bahwa telah membantu proses kerja khususnya bagian administrasi dan teknis. Dan mereka mengucapkan
+                    terima kasih terhadap implementasi proyek Monalisa ini.
+                </p>
+
+                <div class="grid lg:grid-cols-2 gap-3">
+                    <div class="grid grid-cols-2 lg:grid-cols-1 gap-3">
+                        <figure class="relative w-full h-60">
+                            <img class="size-full absolute top-0 start-0 object-cover rounded-xl"
+                                src="/dist/img/fotojumat1.jpeg" alt="Image Description">
+                        </figure>
+                        <figure class="relative w-full h-60">
+                            <img class="size-full absolute top-0 start-0 object-cover rounded-xl"
+                                src="dist/img/fotojumat2.jpeg" alt="Image Description">
+                        </figure>
+                    </div>
+                    <figure class="relative w-full h-72 sm:h-96 lg:h-full">
+                        <img class="size-full absolute top-0 start-0 object-cover rounded-xl"
+                            src="/dist/img/fotojumat3.jpeg" alt="Image Description">
+                    </figure>
+
+                </div>
+
+                <div class="space-y-3">
+                    <h3 class="text-2xl font-semibold dark:text-white">Kebersamaan Mentor, Pegawai dan Tim Magang
+                        Undiksha</h3>
+                </div>
+
+                <p class="text-lg text-gray-800 dark:text-neutral-200">
+                    Setiap hari Jumat, tim penulis melakukan kegiatan kebersamaan sebagai rasa syukur dan silahturahmi
+                    antar pegawai maupun tim magang dari mahasiswa. Acara ini terdiri dari makan bersama, karaoke,
+                    ngobrol sesama pegawai untuk tujuan mengurangi pikiran jenuh akibat bekerja yang berlebih. Ini
+                    menjadi bukti bahwa instansi ini tetap memperhatikan dari sisi kehumanisan dan keharmonian antar
+                    sesama umat manusia. Foto-foto tersebut menjadi bukti bahwa produktivitas tidak hanya sekadar terus
+                    bekerja tapi bagaimana menjalin hubungan kebersamaan antar sesama manusia.
+                </p>
+
+            </div>
+            <!-- End Content -->
+        </div>
+        <hr class="border-gray-400 border-1 mt-11">
+    </div>
+    <!-- End Blog Article -->
+
+    <!-- Footer -->
+    <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto text-center">
+        <!-- Grid -->
+        <div>
+            <a class="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">Bulan
+                Juni</a>
+        </div>
+        <!-- End Col -->
+        <div class="mt-3">
+            <p class="text-gray-500 dark:text-neutral-500">Blog Magang BPS Kabupaten Buleleng</p>
+            <p class="text-gray-500 dark:text-neutral-500">I Gede Bagastia Widi Atmaja</p>
+        </div>
+
+        <!-- Social Brands -->
+        <div class="mt-3 mb-3 space-x-2 flex justify-center">
+            <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
+                href="https://bulelengkab.bps.go.id/">
+                <img src="dist/img/logobps.png" alt="logobps">
+            </a>
+            <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
+                href="https://undiksha.ac.id/">
+                <img src="dist/img/logoundiksha.png" alt="logoundiksha">
+            </a>
+        </div>
+        <!-- End Social Brands -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript Imports -->
+    <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+</body>
+
+</html>

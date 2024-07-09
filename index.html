@@ -1,473 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Magang</title>
-    <link href="dist/output.css" rel="stylesheet">
-    <link href="src/navbar.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Magang</title>
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="src/navbar.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
-  <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
-    <div class="flex items-center justify-between w-full sm:w-auto">
-      <div class="sm:hidden">
-        <button id="hamburgerButton" type="button" class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg hover:border-gray-200 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-          <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="hamburgerIcon">
-            <line x1="3" x2="21" y1="6" y2="6"/>
-            <line x1="3" x2="21" y1="12" y2="12"/>
-            <line x1="3" x2="21" y1="18" y2="18"/>
-          </svg>
-          <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="closeIcon">
-            <path d="M18 6 6 18"/>
-            <path d="m6 6 12 12"/>
-          </svg>
-        </button>
-      </div>      
+  <!-- ========== NAVBAR ========== -->
+  <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+    <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between w-full sm:w-auto">
+        <div class="sm:hidden">
+          <button id="hamburgerButton" type="button"
+            class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg hover:border-gray-200 disabled:opacity-50 disabled:pointer-events-none"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36"
+              height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" id="hamburgerIcon">
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" id="closeIcon">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Dropdown menu -->
+      <div id="dropdownNavbar"
+        class="z-10 hidden font-normal bg-gray-100/70 divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+        <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+          <li>
+            <a href="/magang/februari.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+          </li>
+          <li>
+            <a href="/magang/maret.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+          </li>
+          <li>
+            <a href="/magang/april.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+          </li>
+          <li>
+            <a href="/magang/mei.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+          </li>
+          <li>
+            <a href="/magang/juni.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+          </li>
+          <li>
+            <a href="/magang/juli.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+          </li>
+        </ul>
+      </div>
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/index.html">Beranda</a>
+          <a data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+            Blog
+            <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M1 1l4 4 4-4" />
+            </svg>
+          </a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/proyek-magang.html">Proyek Magang</a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/profil-instansi.html">Profil Instansi</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ========== END NAVBAR ========== -->
+
+
+  <section class="jumbotron bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+    style="background-image: url('dist/img/jumbroton.jpg'); padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-20">
+      <h1 class="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">Website
+        Aktivitas Magang</h1>
+      <p class="mb-6 text-xl md:text-2xl lg:text-3xl font-normal text-gray-300 sm:px-6 lg:px-24">Badan Pusat Statistik
+        Kabupaten Buleleng</p>
     </div>
-     <!-- Dropdown menu -->
-     <div id="dropdownNavbar" class="z-10 hidden font-normal bg-gray-100/70 divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
-      <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-        <li>
-          <a href="/magang/februari.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
-        </li>
-        <li>
-          <a href="/magang/maret.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
-        </li>
-        <li>
-          <a href="/magang/april.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
-        </li>
-        <li>
-          <a href="/magang/mei.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
-        </li>
-        <li>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
-        </li>
-        <li>
-          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
-        </li>
-      </ul>
+  </section>
+
+  <section id="aktivitas-magang"
+    class="dark:bg-neutral-900 section w-full pt-12 bg-slate-50 hover:shadow-dark overflow-hidden">
+    <div class="bg-slate-50 pt-7 pb-16 dark:bg-neutral-900 overflow-hidden">
+      <div class="lg:w-[75%] m-auto w-[95%] h-max">
+        <!-- Ganti overflow-x-hidden ke overflow-hidden di sini -->
+
+        <div class="max-w-2xl ml-2 text-left mb-10 md:ml-3 lg:mb-14" data-aos="fade-up">
+          <h2 class="text-4xl font-bold md:text-5xl sm:text-4xl md:leading-tight dark:text-white">Blog Aktivitas Magang
+          </h2>
+          <p class="mt-1 text-gray-600 text-lg dark:text-neutral-400">Badan Pusat Statistik Kabupaten Buleleng</p>
+        </div>
+
+        <!-- 1. START ACTIVITY -->
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">19 Feb 2024 - 29 Feb 2024</h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/februari.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/apelmagang.jpg" alt="diskusi"
+                      class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Februari
+                    </h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 19 Feb 2024 - 29 Feb 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Kegiatan pertama magang diawali dengan kegiatan apel pagi, penulis melaksanakan apel pagi bersama
+                      dengan para
+                      pegawai Badan Pusat Statistik Kabupaten Buleleng. Melalui apel ini juga penulis merasa lebih dekat
+                      dengan
+                      pegawai...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 1. END ACTIVITY -->
+
+        <!-- 2. START ACTIVITY -->
+        <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Mar 2024 - 31 Mar 2024</h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/maret.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/fotomaret1.png" alt="diskusi"
+                      class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Maret</h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 01 Mar 2024 - 31 Mar 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Pada bulan maret ini, penulis mendapatkan tugas untuk entri data dokumen SUSENAS (Survei Ekonomi
+                      Nasional)
+                      2024. kegiatan ini sangat penting untuk penulis, karena dapat memberikan gambaran bagaimana proses
+                      pengolahan
+                      data itu dilakukan pada instansi ini statistik...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 2. END ACTIVITY -->
+
+        <!-- 3. START ACTIVITY -->
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Apr 2024 - 30 Apr 2024</h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/april.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/fotoapril1.png" alt="diskusi"
+                      class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan April</h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 01 Apr 2024 - 30 Apr 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Selama bulan ini, tim penulis lebih serang melakukan pelaporan progres monalisa dan diskusi dengan
+                      mentor,
+                      pimpinan dan pemangku kepentingan yang terlibat. Kegiatan diawali dengan diskusi mentor dan
+                      pimpinan mengenai
+                      skema proses permintaan data...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 3. END ACTIVITY -->
+
+        <!-- 4. START ACTIVITY -->
+        <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Mei 2024 - 31 Mei 2024</h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/mei.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/fotomei3.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Mei</h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 01 Mei 2024 - 31 Mei 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Selama bulan ini penulis lebih berfokus untuk optimalisasi kinerja monalisa. Karena dari hasil uji
+                      coba oleh
+                      pengguna organik (pegawai BPS) pada bulan ini. Terdapat laporan bug yang dilaporkan langsung.
+                      Penulis langsung
+                      menelusuri dan memperbaiki untuk kelancaran...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 4. END ACTIVITY -->
+
+        <!-- 5. START ACTIVITY -->
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Juni 2024 - 30 Juni 2024
+            </h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/juni.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/fotopresentasiakhir.jpg" alt="diskusi"
+                      class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Juni</h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 01 Juni 2024 - 30 Juni 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Penyerahan Piagam Dan Plakat Kepda Mitra Bps Buleleng Beserta Mentor
+                      Jumat, tanggal 7 Juni 2024 terdapat kegiatan kunjungan terakhir Dosen Pembimbing ke tempat magang.
+                      Kunjungan ini dilakukan untuk...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 5. END ACTIVITY -->
+        <!-- 5. START ACTIVITY -->
+        <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <div class="ps-2 my-2 first:mt-0">
+            <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Juli 2024 - 12 Juli 2024
+            </h3>
+          </div>
+          <!-- End Heading -->
+
+          <!-- Item -->
+          <div class="flex gap-x-3">
+            <!-- Icon -->
+            <div
+              class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
+              <div class="relative z-10 size-7 flex justify-center items-center">
+                <div class="size-4 rounded-full bg-primary "></div>
+              </div>
+            </div>
+            <!-- End Icon -->
+
+            <!-- Right Content -->
+            <div class="grow pt-0.5 pb-2 mx-auto">
+              <!-- START DIV -->
+              <a href="/magang/juli.html" class="block w-full">
+                <div
+                  class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
+                  <div class="lg:w-2/5 md:w-full sm:w-full relative">
+                    <img src="dist/img/fotojuli4.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
+                    <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Juli</h3>
+                    <p class="text-left text-sm mb-7">Kegiatan 01 Juli 2024 - 12 Juli 2024</p>
+                    <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
+                      Tidak terasa waktu magang sudah mulai berakhir, penulis menyadari bahwa kesempatan ini tidak lama
+                      namun ada hal yang penting dibalik itu semua yaitu pengalaman. Selama bulan juli ini penulis
+                      berfokus pada pembuatan laporan akhir dan video promosi...
+                      <br><br>
+                      <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
+                    </p>
+                  </div>
+                  <!-- END CONTENT -->
+                </div>
+              </a>
+              <!-- END DIV -->
+            </div>
+            <!-- End Right Content -->
+          </div>
+          <!-- End Item -->
+        </div>
+        <!-- 5. END ACTIVITY -->
+      </div>
     </div>
-    <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/index.html">Beranda</a>
-        <a data-dropdown-toggle="dropdownNavbar" class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
-          Blog
-          <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path d="M1 1l4 4 4-4" />
-          </svg>
+  </section>
+
+
+  <section id="proyek-magang" class="my-14">
+    <!-- Hero -->
+    <div
+      class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
+        <!-- Announcement Banner -->
+        <div class="flex justify-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <a class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 dark:text-neutral-400"
+            href="/magang/proyek-magang.html">
+            Monalisa
+            <span class="flex items-center gap-x-1">
+              <span
+                class="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500 dark:border-neutral-700">Explore</span>
+              <svg class="flex-shrink-0 size-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <!-- End Announcement Banner -->
+
+        <!-- Title -->
+        <div class="mt-5 max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-once="true"
+          data-aos-duration="1000">
+          <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-8xl dark:text-neutral-200">
+            Proyek Magang
+          </h1>
+        </div>
+        <!-- End Title -->
+
+        <div class="mt-5 max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-once="true"
+          data-aos-duration="1000">
+          <p class="text-xl font-bold text-blue-600 dark:text-blue-400">Sistem Monitoring Kegiatan dan Kualitas
+            Statistik</p>
+          <p class="text-lg mt-4 text-gray-600 dark:text-gray-400">Dalam mengatasi permasalahan terkait pemantauan dan
+            kualitas statistik di Badan Pusat Statistik Kabupaten Buleleng, telah diajukan solusi pengembangan proyek
+            back-end sistem informasi yang dinamakan ... </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mt-8 gap-3 flex justify-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+          <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full py-3 px-4 dark:focus:ring-offset-gray-800"
+            href="/magang/proyek-magang.html">
+            Baca selengkapnya
+          </a>
+        </div>
+        <!-- End Buttons -->
+      </div>
+    </div>
+    <!-- End Hero -->
+  </section>
+
+
+  <section id="mitra-kerjasama" class="my-32">
+    <!-- Card Blog -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-aos="fade-up" data-aos-once="true"
+      data-aos-duration="1000">
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-1 gap-3">
+        <!-- Card -->
+        <a class="group relative block rounded-xl overflow-hidden" href="/magang/mitra-kerjasama.html">
+          <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[650px]">
+            <img
+              class="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="dist/img/fotobersama.jpeg" alt="Image Description">
+            <div class="absolute inset-0 z-[1] bg-gradient-to-t from-gray-900/60"></div>
+          </div>
+
+          <div class="absolute bottom-0 inset-x-0 z-10">
+            <div class="flex flex-col h-full p-4 sm:p-6">
+              <h1
+                class="block font-bold text-white text-4xl md:text-5xl md:pt-5 sm:pt-6 pt-5 lg:text-5xl dark:text-neutral-200">
+                <span class="block md:inline">Mitra Kerjasama Magang Undiksha</span><br>
+                <span
+                  class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-300 to-blue-400 text-transparent">Dengan
+                  BPS Kabupaten Buleleng</span>
+              </h1>
+              <p class="mt-4 mb-5 text-white/80">
+                Universitas Pendidikan Ganesha (Undiksha) dan Badan Pusat Statistik (BPS) Kabupaten ...<span
+                  class="text-primary ml-6 text-blue-400 mt-10 cursor-pointer">Read more</span>
+              </p>
+            </div>
+          </div>
+
         </a>
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/proyek-magang.html">Proyek Magang</a>
-        <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/profil-instansi.html">Profil Instansi</a>
+        <!-- End Card -->
       </div>
+      <!-- End Grid -->
     </div>
-  </nav>
-</div>
-<!-- ========== END NAVBAR ========== -->
+    <!-- End Card Blog -->
+  </section>
 
 
-<section class="jumbotron bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply" style="background-image: url('dist/img/jumbroton.jpg'); padding-top: 5rem; padding-bottom: 5rem;">
-  <div class="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-20">
-    <h1 class="mb-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">Website Aktivitas Magang</h1>
-    <p class="mb-6 text-xl md:text-2xl lg:text-3xl font-normal text-gray-300 sm:px-6 lg:px-24">Badan Pusat Statistik Kabupaten Buleleng</p>          
-  </div>
-</section>
+  <section id="profil-instansi" class="my-32">
+    <!-- Hero -->
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Grid -->
+      <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
+        <div class="lg:col-span-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
+          <h1 class="block text-5xl font-bold text-gray-800 sm:text-5xl md:text-5xl lg:text-6xl dark:text-white">Profil
+            Instansi</h1>
+          <p class="mt-3 text-xl text-gray-800 dark:text-neutral-400">Badan Pusat Statistik Kabupaten Buleleng</p>
 
-<section id="activity" class="dark:bg-neutral-900 section w-full pt-12 bg-slate-50 hover:shadow-dark overflow-hidden">
-  <div class="bg-slate-50 pt-7 pb-16 dark:bg-neutral-900 overflow-hidden">
-    <div class="lg:w-[75%] m-auto w-[95%] h-max">
-      <!-- Ganti overflow-x-hidden ke overflow-hidden di sini -->
-
-      <div class="max-w-2xl ml-2 text-left mb-10 md:ml-3 lg:mb-14" data-aos="fade-up">
-        <h2 class="text-4xl font-bold md:text-5xl sm:text-4xl md:leading-tight dark:text-white">Blog Aktivitas Magang</h2>
-        <p class="mt-1 text-gray-600 text-lg dark:text-neutral-400">Badan Pusat Statistik Kabupaten Buleleng</p>
-      </div>
-
-      <!-- 1. START ACTIVITY -->
-      <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-        <div class="ps-2 my-2 first:mt-0">
-          <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">19 Feb 2024 - 29 Feb 2024</h3>
-        </div>
-        <!-- End Heading -->
-
-        <!-- Item -->
-        <div class="flex gap-x-3">
-          <!-- Icon -->
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-            <div class="relative z-10 size-7 flex justify-center items-center">
-              <div class="size-4 rounded-full bg-primary "></div>
+          <!-- Brands -->
+          <div class="mt-6 lg:mt-12">
+            <p class="text-justify lg:text-lg text-gray-600 dark:text-neutral-100">
+              Badan Pusat Statistik adalah Lembaga Pemerintah Non Kementerian yang bertanggung jawab langsung kepada
+              Presiden. Jenis statistik berdasarkan tujuan pemanfaatannya terdiri atas statistik dasar yang sepenuhnya
+              diselenggarakan oleh BPS, statistik sektoral yang dilaksanakan oleh instansi ....
+              <br><br>
+            <div class="text-left">
+              <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-6 dark:focus:ring-offset-gray-800"
+                href="/magang/profil-instansi.html">
+                Baca Selengkapnya
+                <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </a>
             </div>
-          </div>
-          <!-- End Icon -->
-
-          <!-- Right Content -->
-          <div class="grow pt-0.5 pb-2 mx-auto">
-            <!-- START DIV -->
-            <a href="/magang/februari.html" class="block w-full">
-              <div class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
-                <div class="lg:w-2/5 md:w-full sm:w-full relative">
-                  <img src="dist/img/apelmagang.jpg" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
-                </div>
-
-                <!-- CONTENT -->
-                <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
-                  <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Februari</h3>
-                  <p class="text-left text-sm mb-7">Kegiatan 19 Feb 2024 - 29 Feb 2024</p>
-                  <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
-                    Bulan Februari merupakan bulan pertama saya mengikuti magang di BPS Buleleng, dimulai pada tanggal 19 Februari 2024. Pada awal kegiatan, saya bersama kelompok magang melakukan analisis proses bisnis BPS, termasuk perkenalan dengan...
-                    <br><br>
-                    <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
-                  </p>
-                </div>
-                <!-- END CONTENT -->
-              </div>
-            </a>
-            <!-- END DIV -->
-          </div>
-          <!-- End Right Content -->
-        </div>
-        <!-- End Item -->
-      </div>
-      <!-- 1. END ACTIVITY -->
-
-      <!-- 2. START ACTIVITY -->
-      <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-        <div class="ps-2 my-2 first:mt-0">
-          <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Mar 2024 - 31 Mar 2024</h3>
-        </div>
-        <!-- End Heading -->
-
-        <!-- Item -->
-        <div class="flex gap-x-3">
-          <!-- Icon -->
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-            <div class="relative z-10 size-7 flex justify-center items-center">
-              <div class="size-4 rounded-full bg-primary "></div>
-            </div>
-          </div>
-          <!-- End Icon -->
-
-          <!-- Right Content -->
-          <div class="grow pt-0.5 pb-2 mx-auto">
-            <!-- START DIV -->
-            <a href="/magang/maret.html" class="block w-full">
-              <div class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
-                <div class="lg:w-2/5 md:w-full sm:w-full relative">
-                  <img src="dist/img/fotomaret1.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
-                </div>
-
-                <!-- CONTENT -->
-                <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
-                  <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Maret</h3>
-                  <p class="text-left text-sm mb-7">Kegiatan 01 Mar 2024 - 31 Mar 2024</p>
-                  <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
-                    Bulan Maret adalah bulan kedua kami mengikuti kegiatan magang di BPS Buleleng. Selama bulan ini, kami terlibat dalam berbagai aktivitas magang, termasuk melakukan entri dokumen Susenas, berdiskusi tentang alat pengembangan yang akan digunakan...
-                    <br><br>
-                    <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
-                  </p>
-                </div>
-                <!-- END CONTENT -->
-              </div>
-            </a>
-            <!-- END DIV -->
-          </div>
-          <!-- End Right Content -->
-        </div>
-        <!-- End Item -->
-      </div>
-      <!-- 2. END ACTIVITY -->
-
-      <!-- 3. START ACTIVITY -->
-      <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-        <div class="ps-2 my-2 first:mt-0">
-          <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Apr 2024 - 30 Apr 2024</h3>
-        </div>
-        <!-- End Heading -->
-
-        <!-- Item -->
-        <div class="flex gap-x-3">
-          <!-- Icon -->
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-            <div class="relative z-10 size-7 flex justify-center items-center">
-              <div class="size-4 rounded-full bg-primary "></div>
-            </div>
-          </div>
-          <!-- End Icon -->
-
-          <!-- Right Content -->
-          <div class="grow pt-0.5 pb-2 mx-auto">
-            <!-- START DIV -->
-            <a href="/magang/april.html" class="block w-full">
-              <div class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
-                <div class="lg:w-2/5 md:w-full sm:w-full relative">
-                  <img src="dist/img/fotoapril1.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
-                </div>
-
-                <!-- CONTENT -->
-                <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
-                  <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan April</h3>
-                  <p class="text-left text-sm mb-7">Kegiatan 01 Apr 2024 - 30 Apr 2024</p>
-                  <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
-                    Bulan April merupakan bulan yang menandai kami memasuki tahap lanjut dalam kegiatan magang di BPS Buleleng. Selama periode ini, kami secara aktif terlibat dalam serangkaian aktivitas yang meliputi pengembangan proyek, diskusi intensif dengan mentor dan...
-                    <br><br>
-                    <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
-                  </p>
-                </div>
-                <!-- END CONTENT -->
-              </div>
-            </a>
-            <!-- END DIV -->
-          </div>
-          <!-- End Right Content -->
-        </div>
-        <!-- End Item -->
-      </div>
-      <!-- 3. END ACTIVITY -->
-
-      <!-- 4. START ACTIVITY -->
-      <div data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-        <div class="ps-2 my-2 first:mt-0">
-          <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Mei 2024 - 31 Mei 2024</h3>
-        </div>
-        <!-- End Heading -->
-
-        <!-- Item -->
-        <div class="flex gap-x-3">
-          <!-- Icon -->
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-            <div class="relative z-10 size-7 flex justify-center items-center">
-              <div class="size-4 rounded-full bg-primary "></div>
-            </div>
-          </div>
-          <!-- End Icon -->
-
-          <!-- Right Content -->
-          <div class="grow pt-0.5 pb-2 mx-auto">
-            <!-- START DIV -->
-            <a href="/magang/mei.html" class="block w-full">
-              <div class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
-                <div class="lg:w-2/5 md:w-full sm:w-full relative">
-                  <img src="dist/img/fotomei3.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
-                </div>
-
-                <!-- CONTENT -->
-                <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
-                  <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Mei</h3>
-                  <p class="text-left text-sm mb-7">Kegiatan 01 Mei 2024 - 31 Mei 2024</p>
-                  <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
-                    Bulan Mei merupakan bulan keempat kami menjalani magang di BPS Buleleng. Selama periode ini, kami terlibat secara aktif dalam serangkaian aktivitas, termasuk melanjutkan pengembangan backend pada fitur administrasi, mengadakan diskusi intensif dengan mentor...
-                    <br><br>
-                    <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
-                  </p>
-                </div>
-                <!-- END CONTENT -->
-              </div>
-            </a>
-            <!-- END DIV -->
-          </div>
-          <!-- End Right Content -->
-        </div>
-        <!-- End Item -->
-      </div>
-      <!-- 4. END ACTIVITY -->
-
-      <!-- 5. START ACTIVITY -->
-      <div data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-        <div class="ps-2 my-2 first:mt-0">
-          <h3 class="text-xs font-medium uppercase text-gray-500 dark:text-neutral-400">01 Juni 2024 - 30 Juni 2024</h3>
-        </div>
-        <!-- End Heading -->
-
-        <!-- Item -->
-        <div class="flex gap-x-3">
-          <!-- Icon -->
-          <div class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-            <div class="relative z-10 size-7 flex justify-center items-center">
-              <div class="size-4 rounded-full bg-primary "></div>
-            </div>
-          </div>
-          <!-- End Icon -->
-
-          <!-- Right Content -->
-          <div class="grow pt-0.5 pb-2 mx-auto">
-            <!-- START DIV -->
-            <a href="/magang/juni.html" class="block w-full">
-              <div class="w-full lg:h-[350px] dark:bg-neutral-950 bg-white cursor-pointer shadow-sm mb-8 rounded-3xl lg:flex md:block sm:block relative transition-transform duration-300 transform hover:scale-95">
-                <div class="lg:w-2/5 md:w-full sm:w-full relative">
-                  <img src="dist/img/fotomei1.png" alt="diskusi" class="w-full lg:rounded-s-3xl h-full object-cover">
-                </div>
-
-                <!-- CONTENT -->
-                <div class="lg:w-3/5 md:w-full sm:w-full text-secondary p-8 relative">
-                  <h3 class="text-secondary text-left text-4xl font-bold mb-2 dark:text-neutral-100">Bulan Juni</h3>
-                  <p class="text-left text-sm mb-7">Kegiatan 01 Juni 2024 - 30 Juni 2024</p>
-                  <p class="text-justify lg:text-lg text-gray-700 dark:text-neutral-100">
-                    Bulan Februari merupakan bulan pertama saya mengikuti magang di BPS Buleleng, dimulai pada tanggal 19 Februari 2024. Pada awal kegiatan, saya bersama kelompok magang melakukan analisis proses bisnis BPS, termasuk perkenalan dengan lingkungan kerja, pegawai, dan tugas-tugas yang akan diemban.
-                    <br><br>
-                    <span class="text-primary text-blue-500 mt-10 cursor-pointer">Read more ></span>
-                  </p>
-                </div>
-                <!-- END CONTENT -->
-              </div>
-            </a>
-            <!-- END DIV -->
-          </div>
-          <!-- End Right Content -->
-        </div>
-        <!-- End Item -->
-      </div>
-      <!-- 5. END ACTIVITY -->
-    </div>
-  </div>
-</section>
-
-    
-<section id="proyek-magang" class="my-14">
-  <!-- Hero -->
-<div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
-    <!-- Announcement Banner -->
-    <div class="flex justify-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-      <a class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-neutral-800 dark:border-neutral-700 dark:hover:border-neutral-600 dark:text-neutral-400" href="/magang/proyek-magang.html">
-        Monalisa
-        <span class="flex items-center gap-x-1">
-          <span class="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500 dark:border-neutral-700">Explore</span>
-          <svg class="flex-shrink-0 size-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-        </span>
-      </a>
-    </div>
-    <!-- End Announcement Banner -->
-
-    <!-- Title -->
-    <div class="mt-5 max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-      <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-8xl dark:text-neutral-200">
-        Proyek Magang
-      </h1>
-    </div>
-    <!-- End Title -->
-
-    <div class="mt-5 max-w-4xl text-center mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-      <p class="text-xl font-bold text-blue-600 dark:text-blue-400">Sistem Monitoring Kegiatan dan Kualitas Statistik</p>
-      <p class="text-lg mt-4 text-gray-600 dark:text-gray-400">Dalam mengatasi permasalahan terkait pemantauan dan kualitas statistik di Badan Pusat Statistik Kabupaten Buleleng, telah diajukan solusi pengembangan proyek back-end sistem informasi yang dinamakan ... </p>
-    </div>
-
-    <!-- Buttons -->
-    <div class="mt-8 gap-3 flex justify-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-      <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full py-3 px-4 dark:focus:ring-offset-gray-800" href="/magang/proyek-magang.html">
-        Baca selengkapnya
-      </a>
-    </div>
-    <!-- End Buttons -->
-  </div>
-</div>
-<!-- End Hero -->
-</section>
-
-
-<section id="mitra-kerjasama" class="my-32">
-  <!-- Card Blog -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
-    <!-- Grid -->
-    <div class="grid lg:grid-cols-1 gap-3">
-      <!-- Card -->
-      <a class="group relative block rounded-xl overflow-hidden" href="/magang/mitra-kerjasama.html">
-        <div class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[650px]">
-          <img class="absolute top-0 left-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="dist/img/fotobersama.jpeg" alt="Image Description">
-          <div class="absolute inset-0 z-[1] bg-gradient-to-t from-gray-900/60"></div>
-        </div>
-
-        <div class="absolute bottom-0 inset-x-0 z-10">
-          <div class="flex flex-col h-full p-4 sm:p-6">
-            <h1 class="block font-bold text-white text-4xl md:text-5xl md:pt-5 sm:pt-6 pt-5 lg:text-5xl dark:text-neutral-200">
-              <span class="block md:inline">Mitra Kerjasama Magang Undiksha</span><br>
-              <span class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-300 to-blue-400 text-transparent">Dengan BPS Kabupaten Buleleng</span>
-            </h1>
-            <p class="mt-4 mb-5 text-white/80">
-              Universitas Pendidikan Ganesha (Undiksha) dan Badan Pusat Statistik (BPS) Kabupaten ...<span class="text-primary ml-6 text-blue-400 mt-10 cursor-pointer">Read more</span>
             </p>
           </div>
+          <!-- End Brands -->
         </div>
+        <!-- End Col -->
 
-      </a>
-      <!-- End Card -->
-    </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Card Blog -->
-</section>
-
-
-<section id="profil-instansi" class="my-32">
-  <!-- Hero -->
-<div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-  <!-- Grid -->
-  <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
-    <div class="lg:col-span-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-      <h1 class="block text-5xl font-bold text-gray-800 sm:text-5xl md:text-5xl lg:text-6xl dark:text-white">Profil Instansi</h1>
-      <p class="mt-3 text-xl text-gray-800 dark:text-neutral-400">Badan Pusat Statistik Kabupaten Buleleng</p>
-
-      <!-- Brands -->
-      <div class="mt-6 lg:mt-12">
-        <p class="text-justify lg:text-lg text-gray-600 dark:text-neutral-100">
-          Badan Pusat Statistik adalah Lembaga Pemerintah Non Kementerian yang bertanggung jawab langsung kepada Presiden. Jenis statistik berdasarkan tujuan pemanfaatannya terdiri atas statistik dasar yang sepenuhnya diselenggarakan oleh BPS, statistik sektoral yang dilaksanakan oleh instansi .... 
-          <br><br>
-          <div class="text-left">
-            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-6 dark:focus:ring-offset-gray-800" href="/magang/profil-instansi.html">
-              Baca Selengkapnya
-              <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
-          </div>
-        </p>
+        <div class="lg:col-span-4 mt-10 lg:mt-0" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+          <img class="w-full rounded-xl" src="dist/img/gedungbps.jpg" alt="Image Description">
+        </div>
+        <!-- End Col -->
       </div>
-      <!-- End Brands -->
+      <!-- End Grid -->
     </div>
-    <!-- End Col -->
+    <!-- End Hero -->
+  </section>
 
-    <div class="lg:col-span-4 mt-10 lg:mt-0" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-      <img class="w-full rounded-xl" src="dist/img/gedungbps.jpg" alt="Image Description">
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
+    <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
+      <!-- Grid -->
+      <h1 class="flex-none text-2xl font-semibold text-white" aria-label="bagas">Website Aktivitas Magang</h1>
+      <h1 class="flex-none text-sm mt-3 font-medium text-gray-400" aria-label="bagas">Oleh I Gede Bagastia Widi Atmaja |
+        S1 Sistem Informasi</h1>
+
+      <div class="col-span-1 mt-5">
+        <p><a
+            class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+            href="#">Beranda</a></p>
+        <p><a
+            class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+            href="#aktivitas-magang">Blog</a></p>
+        <p><a
+            class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+            href="#mitra-kerjasama">Mitra Kerjasama</a></p>
+        <p><a
+            class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+            href="#proyek-magang">Proyek Magang</a></p>
+        <p><a
+            class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+            href="#profil-instansi">Profil Instansi</a></p>
+      </div>
+      <!-- End Col -->
+
+      <div class="mt-5 sm:mt-12 flex items-center">
+        <p class="text-sm text-gray-400 dark:text-neutral-400 mr-2">Dikembangkan dengan Tailwind CSS | 2024</p>
+        <a class="size-10 ml-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+          href="#">
+          <img src="dist/img/logobps.png" alt="logobps">
+        </a>
+        <a class="size-10 ml-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600"
+          href="#">
+          <img src="dist/img/logoundiksha.png" alt="logoundiksha">
+        </a>
+      </div>
     </div>
-    <!-- End Col -->
-  </div>
-  <!-- End Grid -->
-</div>
-<!-- End Hero -->
-</section>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
 
 
-<!-- ========== FOOTER ========== -->
-<footer class="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
-  <div class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
-    <!-- Grid -->
-    <h1 class="flex-none text-2xl font-semibold text-white" aria-label="bagas">Website Aktivitas Magang</h1>
-    <h1 class="flex-none text-sm mt-3 font-medium text-gray-400" aria-label="bagas">Oleh I Gede Bagastia Widi Atmaja | S1 Sistem Informasi</h1>
-
-    <div class="col-span-1 mt-5">
-      <p><a class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Beranda</a></p>
-      <p><a class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Blog</a></p>
-      <p><a class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Mitra Kerjasama</a></p>
-      <p><a class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Proyek Magang</a></p>
-      <p><a class="inline-flex mt-2 gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200" href="#">Profil Instansi</a></p>
-    </div>
-    <!-- End Col -->
-
-    <div class="mt-5 sm:mt-12 flex items-center">
-      <p class="text-sm text-gray-400 dark:text-neutral-400 mr-2">Dikembangkan dengan Tailwind CSS | 2024</p>
-      <a class="size-10 ml-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
-       <img src="dist/img/logobps.png" alt="logobps">
-      </a>
-      <a class="size-10 ml-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-white/10 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" href="#">
-        <img src="dist/img/logoundiksha.png" alt="logoundiksha">
-      </a>
-    </div>
-</footer>
-<!-- ========== END FOOTER ========== -->
-
-    <script>
-      window.addEventListener("scroll", function () {
+  <script>
+    window.addEventListener("scroll", function () {
       var navbar = document.querySelector(".navbar");
       if (window.scrollY > 50) {
         navbar.classList.add("scrolled");
@@ -475,14 +637,15 @@
         navbar.classList.remove("scrolled");
       }
     });
-    </script>
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
-   <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
 </body>
+
 </html>

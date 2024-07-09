@@ -1833,6 +1833,10 @@ input:checked + .toggle-bg {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100\/70 {
+  background-color: rgb(243 244 246 / 0.7);
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1874,30 +1878,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-gray-100\/85 {
-  background-color: rgb(243 244 246 / 0.85);
-}
-
-.bg-gray-100\/60 {
-  background-color: rgb(243 244 246 / 0.6);
-}
-
-.bg-gray-100\/50 {
-  background-color: rgb(243 244 246 / 0.5);
-}
-
-.bg-gray-100\/90 {
-  background-color: rgb(243 244 246 / 0.9);
-}
-
-.bg-gray-100\/80 {
-  background-color: rgb(243 244 246 / 0.8);
-}
-
-.bg-gray-100\/70 {
-  background-color: rgb(243 244 246 / 0.7);
 }
 
 .bg-opacity-50 {
@@ -2849,11 +2829,6 @@ input:checked + .toggle-bg {
 .dark\:hover\:text-white:hover:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.dark\:hover\:text-black:hover:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .dark\:focus\:bg-neutral-800:focus:is(.dark *) {

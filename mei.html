@@ -1,93 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mei
-    </title>
-    <link href="dist/output.css" rel="stylesheet">
-    <link href="src/navbar-2.css" rel="stylesheet">
 
-      <!-- Navbar -->
-      <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
-        <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
-          <div class="flex items-center justify-between w-full sm:w-auto">
-            <div class="sm:hidden">
-              <button type="button" class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-                <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-              </button>
-            </div>
-          </div>
-           <!-- Dropdown menu -->
-           <div id="dropdownNavbar" class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
-            <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-              <li>
-                <a href="/magang/februari.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
-              </li>
-              <li>
-                <a href="/magang/maret.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
-              </li>
-              <li>
-                <a href="/magang/april.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
-              </li>
-              <li>
-                <a href="/magang/mei.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
-              </li>
-              <li>
-                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
-              </li>
-            </ul>
-          </div>
-                          
-          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
-              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/index.html">Beranda</a>
-              <a data-dropdown-toggle="dropdownNavbar" class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
-                Blog
-                <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                  <path d="M1 1l4 4 4-4" />
-                </svg>
-              </a>
-              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
-              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/proyek.html">Proyek Magang</a>
-              <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base" href="/magang/profil-instansi.html">Profil Instansi</a>
-            </div>
-          </div>          
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mei
+  </title>
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="src/navbar-2.css" rel="stylesheet">
+
+  <!-- Navbar -->
+  <div class="navbar flex flex-wrap sm:justify-center sm:flex-nowrap z-50 w-full text-lg py-2 sm:py-2 top">
+    <nav class="relative max-w-[70rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global">
+      <div class="flex items-center justify-between w-full sm:w-auto">
+        <div class="sm:hidden">
+          <button type="button"
+            class="hs-collapse-toggle size-12 flex justify-center items-center gap-x-4 text-xl font-semibold rounded-lg border border-white/20 hover:border-white/40 disabled:opacity-50 disabled:pointer-events-none"
+            data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation">
+            <svg class="hs-collapse-open:hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg" width="36"
+              height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <line x1="3" x2="21" y1="6" y2="6" />
+              <line x1="3" x2="21" y1="12" y2="12" />
+              <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            <svg class="hs-collapse-open:block hidden flex-shrink-0 size-9" xmlns="http://www.w3.org/2000/svg"
+              width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
-    <!-- End Navbar -->
-    <script>
-      window.addEventListener('scroll', function() {
-          var navbar = document.querySelector('.navbar');
-          if (window.scrollY > 0) {
-              navbar.classList.add('scrolled');
-          } else {
-              navbar.classList.remove('scrolled');
-          }
-      });
-    </script>
+      <!-- Dropdown menu -->
+      <div id="dropdownNavbar"
+        class="z-10 hidden font-normal divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+        <ul class="py-2 text-sm text-gray-900 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+          <li>
+            <a href="/magang/februari.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Februari</a>
+          </li>
+          <li>
+            <a href="/magang/maret.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Maret</a>
+          </li>
+          <li>
+            <a href="/magang/april.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">April</a>
+          </li>
+          <li>
+            <a href="/magang/mei.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mei</a>
+          </li>
+          <li>
+            <a href="/magang/juni.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juni</a>
+          </li>
+          <li>
+            <a href="/magang/juli.html"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Juli</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-center py-2 md:py-0">
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/index.html">Beranda</a>
+          <a data-dropdown-toggle="dropdownNavbar"
+            class="flex items-center py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base">
+            Blog
+            <svg class="w-2.5 h-2.5 ml-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M1 1l4 4 4-4" />
+            </svg>
+          </a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/mitra-kerjasama.html">Mitra Kerjasama</a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/proyek-magang.html">Proyek Magang</a>
+          <a class="py-2 px-3 sm:px-4 font-medium text-white/100 hover:text-blue-500 text-base"
+            href="/magang/profil-instansi.html">Profil Instansi</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- End Navbar -->
+  <script>
+    window.addEventListener('scroll', function () {
+      var navbar = document.querySelector('.navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
 
 </head>
 
 <body class="flex flex-col min-h-screen">
- <!-- Hero -->
-<div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 mt-8 lg:mt-0">
-  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-6 lg:pb-10">
-    <!-- Title and Description -->
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="block font-bold text-gray-800 text-5xl md:text-6xl md:pt-5 sm:pt-6 pt-5 lg:text-6xl dark:text-neutral-200">
-        <span class="block md:inline">May</span>
-        <span class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-500 to-blue-600 text-transparent">Recap</span>
-      </h1>
+  <!-- Hero -->
+  <div
+    class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2 mt-8 lg:mt-0">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-6 lg:pb-10">
+      <!-- Title and Description -->
+      <div class="max-w-4xl mx-auto text-center">
+        <h1
+          class="block font-bold text-gray-800 text-5xl md:text-6xl md:pt-5 sm:pt-6 pt-5 lg:text-6xl dark:text-neutral-200">
+          <span class="block md:inline">Bulan</span>
+          <span
+            class="block md:inline bg-clip-text bg-gradient-to-tl from-teal-500 to-blue-600 text-transparent">Mei</span>
+        </h1>
+      </div>
+      <!-- End Title and Description -->
     </div>
-    <!-- End Title and Description -->
   </div>
-</div>
-<!-- End Hero -->
+  <!-- End Hero -->
 
 
   <!-- Blog Article -->
@@ -96,76 +129,94 @@
       <!-- Content -->
       <div class="space-y-5 md:space-y-8">
         <blockquote class="text-center p-4 sm:px-7">
-            <p class="text-xl italic font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
-              “Kesempatan Untuk Tumbuh Bersama Tantangan, Menciptakan Pengalaman Gemilang”
-            </p>
-          </blockquote>
+          <p
+            class="text-xl italic font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
+            “Kesempatan Untuk Tumbuh Bersama Tantangan, Menciptakan Pengalaman Gemilang”
+          </p>
+        </blockquote>
 
-          <!-- Goals of Collaboration -->
-        
-          <figure>
-            <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei2.png" alt="foto">
-            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-              Perbaikan bug rutin pada Monalisa
-            </figcaption>
-          </figure>
+        <!-- Goals of Collaboration -->
+
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei2.png" alt="foto">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Perbaikan bug rutin pada Monalisa
+          </figcaption>
+        </figure>
 
         <div class="space-y-3">
-            <h3 class="text-2xl font-semibold dark:text-white">Perbaikan Bug Rutin Monalisa</h3>
-          </div>
-  
-          <p class="text-lg text-gray-800 dark:text-neutral-200">
-            Selama bulan ini penulis lebih berfokus untuk optimalisasi kinerja monalisa. Karena dari hasil uji coba oleh pengguna organik (pegawai BPS) pada bulan ini. Terdapat laporan bug yang dilaporkan langsung. Penulis langsung menelusuri dan memperbaiki untuk kelancaran pemakaian sistem administrasi Monalisa.           </p>
-          <p class="text-lg text-gray-800 dark:text-neutral-200">
-            Sistem monalisa sudah berjalan dalam bentuk Production atau sudah berjalan pada tahap produksi. Tapi saat ini hanya berjalan pada server lokal, karena kepentingan penggunaan sekarang hanya sebatas lingkup organik saja. Penulis terus melakukan update patch secara berkala agar optimalisasi sistem informasi ini berjalan dengan baik. Tidak hanya sisi back-end, tim penulis yang lain juga mendapatkan laporan bahwa dari tampilan antarmuka masih ada yang kurang sesuai akibat dari bug ini. melalui banyak laporan dari organik, penulis dapat mempelajari bahwa tidak selamanya sistem baru dijalankan dapat berjalan dengan sempurna, ada tingkat perbaikan lebih lanjut hal itu.          </p>
+          <h3 class="text-2xl font-semibold dark:text-white">Perbaikan Bug Rutin Monalisa</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Selama bulan ini penulis lebih berfokus untuk optimalisasi kinerja monalisa. Karena dari hasil uji coba oleh
+          pengguna organik (pegawai BPS) pada bulan ini. Terdapat laporan bug yang dilaporkan langsung. Penulis langsung
+          menelusuri dan memperbaiki untuk kelancaran pemakaian sistem administrasi Monalisa. </p>
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Sistem monalisa sudah berjalan dalam bentuk Production atau sudah berjalan pada tahap produksi. Tapi saat ini
+          hanya berjalan pada server lokal, karena kepentingan penggunaan sekarang hanya sebatas lingkup organik saja.
+          Penulis terus melakukan update patch secara berkala agar optimalisasi sistem informasi ini berjalan dengan
+          baik. Tidak hanya sisi back-end, tim penulis yang lain juga mendapatkan laporan bahwa dari tampilan antarmuka
+          masih ada yang kurang sesuai akibat dari bug ini. melalui banyak laporan dari organik, penulis dapat
+          mempelajari bahwa tidak selamanya sistem baru dijalankan dapat berjalan dengan sempurna, ada tingkat perbaikan
+          lebih lanjut hal itu. </p>
 
 
         <figure>
-            <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei3.png" alt="foto">
-            <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-              Rapat bersama pimpinan
-            </figcaption>
-          </figure>
-  
-          <div class="space-y-3">
-              <h3 class="text-2xl font-semibold dark:text-white">Rapat Bersama Pimpinan</h3>
-            </div>
-    
-            <p class="text-lg text-gray-800 dark:text-neutral-200">
-              Rapat dengan pemimpin masih intensif dilakukan pada bulan ini, rapat terdiri dari mentor, pimpinan dan pemangku kepentingan terlibat. Rapat membahas hasil uji coba sistem yang mereka uji coba kemarin. Mereka cukup puas dengan kinerja sistem yang tim penulis kembangkan, namun ada beberapa hal yang masih menjadi evaluasi untuk kedepannya lebih baik. Masukan dari mereka membuat penulis merasa bahwa ada hal yang satu sisi itu penting dan penentuan skala prioritas dalam kerja.
-            </p>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei3.png" alt="foto">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Rapat bersama pimpinan
+          </figcaption>
+        </figure>
+
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Rapat Bersama Pimpinan</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Rapat dengan pemimpin masih intensif dilakukan pada bulan ini, rapat terdiri dari mentor, pimpinan dan
+          pemangku kepentingan terlibat. Rapat membahas hasil uji coba sistem yang mereka uji coba kemarin. Mereka cukup
+          puas dengan kinerja sistem yang tim penulis kembangkan, namun ada beberapa hal yang masih menjadi evaluasi
+          untuk kedepannya lebih baik. Masukan dari mereka membuat penulis merasa bahwa ada hal yang satu sisi itu
+          penting dan penentuan skala prioritas dalam kerja.
+        </p>
 
 
-            <figure>
-                <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei4.jpg" alt="foto">
-                <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                  Upacara hari kebangkitan nasional
-                </figcaption>
-              </figure>
-      
-              <div class="space-y-3">
-                  <h3 class="text-2xl font-semibold dark:text-white">Upacara Hari Kebangkitan Nasional</h3>
-                </div>
-        
-                <p class="text-lg text-gray-800 dark:text-neutral-200">
-                  Pada pagi hari pada tanggal 20 Mei 2024 dalam rangka upacara hari kebangkitan nasional. Upacara peringatan Hari Kebangkitan Nasional menyoroti pentingnya semangat nasionalisme dan kesatuan bagi Badan Pusat Statistik dalam mengabdi kepada negara dan masyarakat.
-                </p>
-    
-            <figure>
-                <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei5.png" alt="foto">
-                <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                  Pengambangan lanjutan
-                </figcaption>
-              </figure>
-      
-              <div class="space-y-3">
-                  <h3 class="text-2xl font-semibold dark:text-white">Pengembangan Lanjutan</h3>
-                </div>
-        
-                <p class="text-lg text-gray-800 dark:text-neutral-200">
-                  Setelah libur hari raya waisak yang memberikan waktu istirahat yang lumayan singkat, penulis kembali ke kantor untuk fokus terhadap pengembangan fitur lebih lanjut seperti fitur pencarian dan notifikasi serta memperbaiki beberapa bug yang mungkin belum terselesaikan. Dan di akhir-akhir bulan juga penulis memperbaiki skema alur data pada bagian admin agar mempermudah admin dapat mengarsipkan data-data tahunan kegiatan administrasi.
-                </p>
-    
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei4.jpg" alt="foto">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Upacara hari kebangkitan nasional
+          </figcaption>
+        </figure>
+
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Upacara Hari Kebangkitan Nasional</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Pada pagi hari pada tanggal 20 Mei 2024 dalam rangka upacara hari kebangkitan nasional. Upacara peringatan
+          Hari Kebangkitan Nasional menyoroti pentingnya semangat nasionalisme dan kesatuan bagi Badan Pusat Statistik
+          dalam mengabdi kepada negara dan masyarakat.
+        </p>
+
+        <figure>
+          <img class="w-full object-cover rounded-xl border border-gray-300" src="dist/img/fotomei5.png" alt="foto">
+          <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+            Pengambangan lanjutan
+          </figcaption>
+        </figure>
+
+        <div class="space-y-3">
+          <h3 class="text-2xl font-semibold dark:text-white">Pengembangan Lanjutan</h3>
+        </div>
+
+        <p class="text-lg text-gray-800 dark:text-neutral-200">
+          Setelah libur hari raya waisak yang memberikan waktu istirahat yang lumayan singkat, penulis kembali ke kantor
+          untuk fokus terhadap pengembangan fitur lebih lanjut seperti fitur pencarian dan notifikasi serta memperbaiki
+          beberapa bug yang mungkin belum terselesaikan. Dan di akhir-akhir bulan juga penulis memperbaiki skema alur
+          data pada bagian admin agar mempermudah admin dapat mengarsipkan data-data tahunan kegiatan administrasi.
+        </p>
+
       </div>
       <!-- End Content -->
     </div>
@@ -187,10 +238,12 @@
 
     <!-- Social Brands -->
     <div class="mt-3 mb-3 space-x-2 flex justify-center">
-      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://bulelengkab.bps.go.id/">
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
+        href="https://bulelengkab.bps.go.id/">
         <img src="dist/img/logobps.png" alt="logobps">
       </a>
-      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700" href="https://undiksha.ac.id/">
+      <a class="size-12 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700"
+        href="https://undiksha.ac.id/">
         <img src="dist/img/logoundiksha.png" alt="logoundiksha">
       </a>
     </div>
